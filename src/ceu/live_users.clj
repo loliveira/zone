@@ -138,8 +138,19 @@
         a   (+ (* (Math/sin (/ Δφ 2)) (Math/sin (/ Δφ 2)))
                (* (Math/cos φ1) (Math/cos φ2) (Math/sin (/ Δλ 2)) (Math/sin (/ Δλ 2))))
         c   (* 2 (Math/atan2 (Math/sqrt a) (Math/sqrt (- 1 a))))]
-    (* c R)))
+    (* c R 1000)))
 
+
+
+
+
+var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+        Math.cos(φ1) * Math.cos(φ2) *
+        Math.sin(Δλ/2) * Math.sin(Δλ/2);
+var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+var d = R * c;
+  )
 
 
 (defn calc-distance [live-users nickname-from coords-to]
