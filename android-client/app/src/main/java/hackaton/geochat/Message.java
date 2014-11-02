@@ -1,5 +1,9 @@
 package hackaton.geochat;
 
+/**
+ * Created by Igor1201 on 01/11/14.
+ */
+
 public class Message {
 
     private String message;

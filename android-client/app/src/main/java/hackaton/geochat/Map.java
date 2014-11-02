@@ -20,6 +20,10 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 
+/**
+ * Created by Igor1201 on 01/11/14.
+ */
+
 public class Map extends Activity implements GoogleMap.OnCameraChangeListener {
 
     private GoogleMap map;

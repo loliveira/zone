@@ -30,6 +30,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Created by Igor1201 on 01/11/14.
+ */
+
 public class Chat extends ListActivity implements LocationListener, WebsocketService.WebSocketListener {
 
     public static final String IP = "http://feynman.buzzlabs.com.br:4000";
@@ -255,8 +259,8 @@ public class Chat extends ListActivity implements LocationListener, WebsocketSer
 
         // start location poller
         LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        //locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 15000, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 2f, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 0f, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 20000, 2f, this);
 
         // open preferences for nickname
         nickname = getSharedPreferences("geochat-v1", 0).getString("nickname", null);

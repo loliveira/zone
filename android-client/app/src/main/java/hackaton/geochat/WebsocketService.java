@@ -23,6 +23,10 @@ import de.tavendo.autobahn.WebSocketConnection;
 import de.tavendo.autobahn.WebSocketException;
 import de.tavendo.autobahn.WebSocketHandler;
 
+/**
+ * Created by Igor1201 on 01/11/14.
+ */
+
 public class WebsocketService extends Service {
 
     private final IBinder mBinder = new MyBinder();

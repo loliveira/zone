@@ -10,6 +10,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Igor1201 on 01/11/14.
+ */
+
 public class MessageAdapter extends BaseAdapter {
 
     private LayoutInflater mInflater;
