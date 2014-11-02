@@ -157,7 +157,7 @@
 
     (doseq [[u info] @users]
       (let [{:keys [coords channel]} info]
-        (when coords
+        (when (and coords channel)
           (let [d (calc-distance live-users nickname coords)
                 relay-data (json/generate-string {:message message :nickname nickname :distance d})]
             (when-not (send! channel relay-data false)
