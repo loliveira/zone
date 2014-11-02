@@ -131,12 +131,14 @@
                 {latitude2 :lat longitude2 :lon :as pt2}]
   (debug "distance - " pt1 pt2)
   (let [R 6371 ; km
-        x (* (- longitude2 longitude1)
-             (Math/cos (/ (+ latitude1 latitude2) 2)))
-        y (- latitude2 latitude1)
-        d (* (Math/sqrt (+ (* x x) (* y y))) R)]
-    (debug "distance - " pt1 " - " pt2 " - " d)
-    d))
+        φ1  (Math/toRadians latitude1)
+        φ2  (Math/toRadians latitude2)
+        Δφ  (-> (- latitude2 latitude1) Math/toRadians)
+        Δλ  (-> (- longitude2 longitude1) Math/toRadians)
+        a   (+ (* (Math/sin (/ Δφ 2)) (Math/sin (/ Δφ 2)))
+               (* (Math/cos φ1) (Math/cos φ2) (Math/sin (/ Δλ 2)) (Math/sin (/ Δλ 2))))
+        c   (* 2 (Math/atan2 (Math/sqrt a) (Math/sqrt (- 1 a))))]
+    (* c R)))
 
 
 
