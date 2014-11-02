@@ -28,4 +28,6 @@
 
   :profiles {:dev {:plugins [[lein-midje "3.1.1"]]
                    :source-paths ["dev"]}}
+
+  :main ceu.main
   )
