@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'zone'
+            storeFile file('/home/igor/git/pirate-kaboom/android/release.keystore')
+        }
+        debug {
+            keyAlias 'androiddebugkey'
+            storeFile file('/home/igor/git/pirate-kaboom/android/debug.keystore')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "21.0.2"
+    defaultConfig {
+        applicationId "hackaton.zone"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.koushikdutta.androidasync:AndroidAsync:1.0.0'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.google.android.gms:play-services:6.1.+'
+}
