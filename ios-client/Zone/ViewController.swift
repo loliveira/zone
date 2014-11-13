@@ -8,11 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    var mainLoader :HRLoader?
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mainLoader = HRLoader(frame: self.view.frame)
+        mainLoader?.isMain()
+        self.view.addSubview(mainLoader!)
+        
+        self.navigationController?.navigationBarHidden = true
+        
+        NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: "openApp", userInfo: nil, repeats: false)
+    }
+    
+    
+    @IBAction func getLocation(sender: UIButton)
+    {
+        Preferences.sharedInstance.getDeviceLocation().latitude
+        Preferences.sharedInstance.getDeviceLocation().longitude
+    }
+    
+    func openApp()
+    {
+        self.performSegueWithIdentifier( "openApp", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

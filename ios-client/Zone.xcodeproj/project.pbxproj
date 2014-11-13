@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DCDBA291A14C09E002AE40C /* zone-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA261A14C09E002AE40C /* zone-logo@2x.png */; };
+		0DCDBA2A1A14C09E002AE40C /* zone-logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA271A14C09E002AE40C /* zone-logo@3x.png */; };
+		0DCDBA2B1A14C09E002AE40C /* zone-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA281A14C09E002AE40C /* zone-logo.png */; };
+		0DCDBA361A14C356002AE40C /* HRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDBA2E1A14C356002AE40C /* HRExtensions.swift */; };
+		0DCDBA371A14C356002AE40C /* HRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDBA2F1A14C356002AE40C /* HRLoader.swift */; };
+		0DCDBA3A1A14C356002AE40C /* HRSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDBA321A14C356002AE40C /* HRSkill.swift */; };
+		0DCDBA3B1A14C356002AE40C /* loader.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA331A14C356002AE40C /* loader.png */; };
+		0DCDBA3C1A14C356002AE40C /* loader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA341A14C356002AE40C /* loader@2x.png */; };
+		0DCDBA3D1A14C356002AE40C /* loader@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDBA351A14C356002AE40C /* loader@3x.png */; };
 		0DCF4C351A124B45003AE8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4C341A124B45003AE8E1 /* AppDelegate.swift */; };
 		0DCF4C371A124B45003AE8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4C361A124B45003AE8E1 /* ViewController.swift */; };
 		0DCF4C3A1A124B45003AE8E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCF4C381A124B45003AE8E1 /* Main.storyboard */; };
 		0DCF4C3C1A124B45003AE8E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCF4C3B1A124B45003AE8E1 /* Images.xcassets */; };
 		0DCF4C3F1A124B45003AE8E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DCF4C3D1A124B45003AE8E1 /* LaunchScreen.xib */; };
 		0DCF4C4B1A124B45003AE8E1 /* ZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF4C4A1A124B45003AE8E1 /* ZoneTests.swift */; };
+		0DD560F51A14CA9D0096C704 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD560F41A14CA9D0096C704 /* Preferences.swift */; };
+		0DD78F041A14CEBF0055B39B /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD78F031A14CEBF0055B39B /* ChatRoom.swift */; };
+		0DD78F061A14CFC80055B39B /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD78F051A14CFC80055B39B /* map.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCDBA261A14C09E002AE40C /* zone-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zone-logo@2x.png"; sourceTree = "<group>"; };
+		0DCDBA271A14C09E002AE40C /* zone-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zone-logo@3x.png"; sourceTree = "<group>"; };
+		0DCDBA281A14C09E002AE40C /* zone-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zone-logo.png"; sourceTree = "<group>"; };
+		0DCDBA2E1A14C356002AE40C /* HRExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRExtensions.swift; sourceTree = "<group>"; };
+		0DCDBA2F1A14C356002AE40C /* HRLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRLoader.swift; sourceTree = "<group>"; };
+		0DCDBA321A14C356002AE40C /* HRSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRSkill.swift; sourceTree = "<group>"; };
+		0DCDBA331A14C356002AE40C /* loader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loader.png; sourceTree = "<group>"; };
+		0DCDBA341A14C356002AE40C /* loader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loader@2x.png"; sourceTree = "<group>"; };
+		0DCDBA351A14C356002AE40C /* loader@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loader@3x.png"; sourceTree = "<group>"; };
 		0DCF4C2F1A124B45003AE8E1 /* Zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCF4C331A124B45003AE8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DCF4C341A124B45003AE8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +57,9 @@
 		0DCF4C441A124B45003AE8E1 /* ZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCF4C491A124B45003AE8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DCF4C4A1A124B45003AE8E1 /* ZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneTests.swift; sourceTree = "<group>"; };
+		0DD560F41A14CA9D0096C704 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		0DD78F031A14CEBF0055B39B /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		0DD78F051A14CFC80055B39B /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = map.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DCDBA251A14B836002AE40C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DCF4C361A124B45003AE8E1 /* ViewController.swift */,
+				0DD78F031A14CEBF0055B39B /* ChatRoom.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0DCDBA2C1A14C0A4002AE40C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDBA2D1A14C0AA002AE40C /* img */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		0DCDBA2D1A14C0AA002AE40C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0DD78F051A14CFC80055B39B /* map.jpg */,
+				0DCDBA281A14C09E002AE40C /* zone-logo.png */,
+				0DCDBA261A14C09E002AE40C /* zone-logo@2x.png */,
+				0DCDBA271A14C09E002AE40C /* zone-logo@3x.png */,
+				0DCDBA331A14C356002AE40C /* loader.png */,
+				0DCDBA341A14C356002AE40C /* loader@2x.png */,
+				0DCDBA351A14C356002AE40C /* loader@3x.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		0DCDBA3E1A14C36F002AE40C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0DD560F41A14CA9D0096C704 /* Preferences.swift */,
+				0DCDBA2E1A14C356002AE40C /* HRExtensions.swift */,
+				0DCDBA2F1A14C356002AE40C /* HRLoader.swift */,
+				0DCDBA321A14C356002AE40C /* HRSkill.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		0DCF4C261A124B45003AE8E1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +144,12 @@
 			isa = PBXGroup;
 			children = (
 				0DCF4C341A124B45003AE8E1 /* AppDelegate.swift */,
-				0DCF4C361A124B45003AE8E1 /* ViewController.swift */,
+				0DCDBA251A14B836002AE40C /* Controllers */,
+				0DCDBA3E1A14C36F002AE40C /* Util */,
 				0DCF4C381A124B45003AE8E1 /* Main.storyboard */,
 				0DCF4C3B1A124B45003AE8E1 /* Images.xcassets */,
 				0DCF4C3D1A124B45003AE8E1 /* LaunchScreen.xib */,
+				0DCDBA2C1A14C0A4002AE40C /* assets */,
 				0DCF4C321A124B45003AE8E1 /* Supporting Files */,
 			);
 			path = Zone;
@@ -193,8 +261,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCF4C3A1A124B45003AE8E1 /* Main.storyboard in Resources */,
+				0DCDBA3C1A14C356002AE40C /* loader@2x.png in Resources */,
+				0DCDBA3B1A14C356002AE40C /* loader.png in Resources */,
 				0DCF4C3F1A124B45003AE8E1 /* LaunchScreen.xib in Resources */,
+				0DD78F061A14CFC80055B39B /* map.jpg in Resources */,
+				0DCDBA2B1A14C09E002AE40C /* zone-logo.png in Resources */,
 				0DCF4C3C1A124B45003AE8E1 /* Images.xcassets in Resources */,
+				0DCDBA291A14C09E002AE40C /* zone-logo@2x.png in Resources */,
+				0DCDBA2A1A14C09E002AE40C /* zone-logo@3x.png in Resources */,
+				0DCDBA3D1A14C356002AE40C /* loader@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCF4C371A124B45003AE8E1 /* ViewController.swift in Sources */,
+				0DCDBA361A14C356002AE40C /* HRExtensions.swift in Sources */,
+				0DD78F041A14CEBF0055B39B /* ChatRoom.swift in Sources */,
+				0DD560F51A14CA9D0096C704 /* Preferences.swift in Sources */,
+				0DCDBA3A1A14C356002AE40C /* HRSkill.swift in Sources */,
+				0DCDBA371A14C356002AE40C /* HRLoader.swift in Sources */,
 				0DCF4C351A124B45003AE8E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +485,7 @@
 				0DCF4C501A124B45003AE8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DCF4C511A124B45003AE8E1 /* Build configuration list for PBXNativeTarget "ZoneTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +494,7 @@
 				0DCF4C531A124B45003AE8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

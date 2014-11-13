@@ -7,17 +7,63 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
+{
 
     var window: UIWindow?
+    
+    // managedObject to interact with coredata
+    let locationManager:CLLocationManager = CLLocationManager()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        startCoreLocation()
+        
+        
         return true
     }
+    
+    
+    // MARK: CoreLocation functions
+    
+    /**
+    * Start Corelocation service
+    *
+    * @param nil
+    * @return void
+    */
+    private func startCoreLocation()
+    {
+        locationManager.delegate = self
+        if ( HRSkill.ios8() ) {
+            locationManager.requestAlwaysAuthorization()
+        }
+        locationManager.startUpdatingLocation()
+    }
+    
+    
+    // MARK: CoreLocation Delegates
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var location:CLLocation = locations[locations.count-1] as CLLocation
+        
+        if (location.horizontalAccuracy > 0) {
+            self.locationManager.stopUpdatingLocation()
+            println(location.coordinate.latitude)
+            println(location.coordinate.longitude)
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println( "Can't get your location!" )
+        println(error)
+        println( "----------------------------" )
+    }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
